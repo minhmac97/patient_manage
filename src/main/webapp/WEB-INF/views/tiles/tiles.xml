@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="layout-template" template="/WEB-INF/views/tiles/layout/LayoutTemplate.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="fb:pages" value="136406996452077"/>
+        <put-attribute name="fb:app_id" value="398569107179016"/>
+        <put-attribute name="og:url" value=""/>
+        <put-attribute name="og:type" value="article"/>
+        <put-attribute name="og:title" value="THIẾT BỊ"/>
+        <put-attribute name="og:description" value=""/>
+        <put-attribute name="og:image" value=""/>
+        <put-attribute name="meta" value=""/>
+        <put-attribute name="bodyContent" value=""/>
+    </definition>
+    <definition name="layout-template-login" template="/WEB-INF/views/tiles/layout/LayoutTemplateLogin.jsp">
+        <put-attribute name="title" expression="${pageTitle}"/>
+        <put-attribute name="bodyContent" value=""/>
+    </definition>
+    <definition name="login" extends="layout-template-login">
+        <put-attribute name="title" expression="${pageTitle}"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/pages/login/login.jsp"/>
+    </definition>
+    <definition name="home" extends="layout-template">
+        <put-attribute name="title" expression="${pageTitle}"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/pages/manage/home.jsp"/>
+    </definition>
+</tiles-definitions>

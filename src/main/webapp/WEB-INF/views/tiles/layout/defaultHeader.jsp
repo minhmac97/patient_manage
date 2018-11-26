@@ -13,7 +13,7 @@
                     <a href="javascript:void(0);" class="user-profile dropdown-toggle" data-toggle="dropdown"
                        aria-expanded="false">
                         <i class="fa fa-circle" style="color: rgb(66, 183, 42)"></i>
-                        ${nameUser}
+                        BS. YẾN
                         <i class="fa fa-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">

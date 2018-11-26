@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IsofH | <tiles:insertAttribute name="title" ignore="true"/></title>
-    <link rel="shortcut icon" href="/static/images/logo/logo_isofh.png" type="image/x-icon">
+    <link href="https://www.haui.edu.vn/dnn/web/haui/assets/images/favicon.png" rel="shortcut icon" type="image/png">
     <!-- Bootstrap -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->

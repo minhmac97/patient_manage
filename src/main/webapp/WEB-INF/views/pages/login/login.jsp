@@ -1,47 +1,27 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<section class="container">
-    <section class="login-form">
-        <form role="login">
-            <img src="/static/images/icon/haui.png" class="img-responsive" alt="" style="height: 65px;width: 325px;margin-bottom: 10px;"/>
-            <input type="text" name="username" id="username" placeholder="Tên đăng nhập..." class="form-control input-lg" autofocus autocomplete="off"/>
-            <input type="password" name="password" id="password" placeholder="Mật khẩu..."  class="form-control input-lg" autocomplete="off"/>
-            <a href="javascript:void(0);" id="btnLogin" class="btn-lg btn-primary btn-block btn" onclick="loginForm.submit()">Đăng nhập</a>
-            <div>
-                <a href="https://www.haui.edu.vn" target="_blank">https://www.haui.edu.vn</a>
+
+<div class="container-login100" style="background-image: url('/static/images/logo/background.jpg');">
+    <div class="wrap-login100">
+        <form class="login100-form validate-form">
+			<span class="login100-form-logo">
+			    <i class="zmdi zmdi-hospital" style="color:red;"></i>
+			</span>
+            <span class="login100-form-title p-b-34 p-t-27">
+				ĐĂNG NHẬP
+			</span>
+            <div class="wrap-input100 validate-input" data-validate="Enter username">
+                <input class="input100" type="text" name="username" placeholder="Tên đăng nhập..." autocomplete="off">
+                <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Enter password">
+                <input class="input100" type="password" name="pass" placeholder="Mật khẩu..." autocomplete="off">
+                <span class="focus-input100" data-placeholder="&#xf191;"></span>
+            </div>
+            <div class="container-login100-form-btn">
+                <button class="login100-form-btn">
+                    Đăng nhập>>
+                </button>
             </div>
         </form>
-    </section>
-    <script>
-        var loginForm = {
-            submit: function () {
-                var nickname = $("#username").val();
-                var password = $("#password").val();
-                if (!nickname || !password || nickname.trim() == "") {
-                    alertSmallBoxTitle("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu!", "error");
-                    return;
-                };
-                AJAXFunction.CallAjax("POST", "/service/admin/login","", {
-                    nicknameOrEmail: nickname,
-                    password: password
-                }, function (data) {
-                    $("body").removeClass("loading");
-                    if (data.success) {
-                        alertSmallBoxTitle("Đăng nhập thành công!",success);
-                        setTimeout(function () {
-                            location.href = "/admin/device"
-                        },500)
-                    }else {
-                        alertSmallBoxTitle(data.message, "error");
-                    }
-                }, function (error) {
-                    alertSmallBoxTitle("Email/tên đăng nhập hoặc mật khẩu không đúng. Vui lòng nhập lại.","error");
-                });
-            },
-        }
-        $(document).keyup(function(e) {
-            if (e.keyCode == 13) {
-                loginForm.submit();
-            }
-        });
-    </script>
-</section>
+    </div>
+</div>

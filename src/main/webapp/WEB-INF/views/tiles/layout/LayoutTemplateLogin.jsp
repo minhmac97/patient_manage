@@ -1,33 +1,58 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: MinhMac-PC
-  Date: 8/3/2018
-  Time: 10:24 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
-<html>
+<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=1,initial-scale=1,user-scalable=1" />
-    <link rel="shortcut icon" href="/static/images/logo/logo_isofh.png" type="image/x-icon">
     <title>Đăng nhập</title>
-    <link href="http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/static/css/login-style.css"/>
-    <script src="/static/jquery/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/static/js/mlmodule/mllibrary.js"></script>
-    <!-- notify style -->
-    <link href="/static/css/notify/pnotify.css" rel="stylesheet">
-    <link href="/static/css/notify/pnotify.buttons.css" rel="stylesheet">
-    <!-- jquery-notify -->
-    <script src="/static/js/notify/pnotify.js"></script>
-    <script src="/static/js/notify/pnotify.buttons.js"></script>
-    <script src="/static/js/notify/alertSmallBox.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <%--<link rel="icon" type="image/png" href="/static/login/images/favicon.ico"/>--%>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/static/login/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/static/login/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/static/login/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/static/login/css/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/static/login/css/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/static/login/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <%--<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">--%>
+    <!--===============================================================================================-->
+    <%--<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">--%>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/static/login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/static/login/css/main.css">
+    <link href="https://www.haui.edu.vn/dnn/web/haui/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+    <!--===============================================================================================-->
 </head>
 <body>
-<tiles:insertAttribute name="bodyContent"/>
+<div class="limiter">
+    <tiles:insertAttribute name="bodyContent"/>
+</div>
+<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+<script src="/static/login/js/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="/static/login/js/animsition.js"></script>
+<!--===============================================================================================-->
+<script src="/static/login/js/popper.js"></script>
+<script src="/static/login/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<%--<script src="vendor/select2/select2.min.js"></script>--%>
+<!--===============================================================================================-->
+<%--<script src="vendor/daterangepicker/moment.min.js"></script>--%>
+<%--<script src="vendor/daterangepicker/daterangepicker.js"></script>--%>
+<!--===============================================================================================-->
+<%--<script src="vendor/countdowntime/countdowntime.js"></script>--%>
+<!--===============================================================================================-->
+<script src="/static/login/js/main.js"></script>
+
 </body>
 </html>

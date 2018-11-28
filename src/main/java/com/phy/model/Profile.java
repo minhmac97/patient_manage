@@ -12,7 +12,7 @@ public class Profile {
 
     @GeneratedValue
     @Column(name = "PROFILEID")
-    private String profileId;
+    private int profileId;
     @Column(name = "NAME", nullable = false)
     private String name;
     @Column(name = "PATIENT_ID", nullable = false)
@@ -39,11 +39,11 @@ public class Profile {
     @JoinColumn(name = "USERID")
     private Users user;
 
-    public String getProfileId() {
+    public int getProfileId() {
         return profileId;
     }
 
-    public void setProfileId(String profileId) {
+    public void setProfileId(int profileId) {
         this.profileId = profileId;
     }
 

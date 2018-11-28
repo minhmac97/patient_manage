@@ -11,7 +11,7 @@ public class Service {
     @Id
     @GeneratedValue
     @Column(name = "SERVICEID")
-    private String serviceId;
+    private int serviceId;
     @Column(name = "NAME", nullable = false)
     private String name;
     @Column(name = "PRICE", nullable = false)
@@ -21,11 +21,11 @@ public class Service {
     @Column(name = "UPDATE_DATE", nullable = false)
     private Date updateDate;
 
-    public String getServiceId() {
+    public int getServiceId() {
         return serviceId;
     }
 
-    public void setServiceId(String serviceId) {
+    public void setServiceId(int serviceId) {
         this.serviceId = serviceId;
     }
 

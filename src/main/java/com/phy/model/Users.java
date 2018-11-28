@@ -12,7 +12,7 @@ public class Users {
     @Id
     @GeneratedValue
     @Column(name = "USERID")
-    private String userId;
+    private int userId;
     @Column(name = "USERNAME", nullable = false)
     private String username;
 
@@ -35,11 +35,11 @@ public class Users {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Set<Authorities> profiles = new HashSet<Authorities>();
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -122,5 +122,7 @@ public class Users {
     public void setProfiles(Set<Authorities> profiles) {
         this.profiles = profiles;
     }
+
+
 }
 
